@@ -1,10 +1,16 @@
     Михайлов Р. 27 когорта. Фин проект (2 часть)
 
 В этом проекте выполнены две задачи:  
+
 1. Работа с базой данных: написаны SQL-запросы для анализа заказов.  
 2. Автоматизация тестирования API: создан автотест для проверки работы заказов в сервисе аренды самокатов.
 
-`queries.sql` – SQL-запросы для работы с базой данных.  
-`test_order_api.py` – автотест API (Python, requests, pytest).  
-`.gitignore` – файлы, которые не загружаются в GitHub.  
-`README.md` – описание проекта.
+Провект включает в себя:
+
+data/order_data.py – Данные для тестов.  
+configuration/config.py – Константы (URL API).  
+sender_requests/api_client.py – Функции для API-запросов.  
+tests/test_create_order.py – Тест создания заказа.  
+tests/test_get_order.py – Тест получения заказа. 
+queries.sql и queries.txt – SQL-запросы.  
+requirements.txt – Список зависимостей. 
